@@ -9,7 +9,7 @@ $app -> delete('/api/proposal/delete/{id}','deleteProposal');
 
 function readProposal($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -32,7 +32,7 @@ function readProposal($request){
 
 function addproposal($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -82,7 +82,7 @@ function addproposal($request){
 
 function updateProposal($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -130,7 +130,7 @@ function updateProposal($request){
 }
 
 function deleteProposal($request){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header('Content-type: application/json');
 	//checking api_key
 	//if api key invalid user can't use this api

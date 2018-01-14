@@ -5,7 +5,7 @@
 	$app -> post('/api/signup',function($request){
 
 		header("Content-type: application/json");//only accept json type data
-		require_once('/../dbconnect.php');
+		require_once __DIR__ .'/../dbconnect.php';
 
 		$query = "INSERT INTO `users`(`name`, `email`, `password`, `remember_token`) VALUES (?,?,?,?)";
 		$stmp = $mysqli-> prepare($query);

@@ -7,7 +7,7 @@ $app -> delete('/api/presentation/delete/{id}','deletePresentaion');
 
 function readPresentaion($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -35,7 +35,7 @@ function readPresentaion($request){
 
 function addPresentaion($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -84,7 +84,7 @@ function addPresentaion($request){
 
 function updatePresentaion($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -133,7 +133,7 @@ function updatePresentaion($request){
 }
 
 function deletePresentaion($request){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header('Content-type: application/json');
 	//checking api_key
 	//if api key invalid user can't use this api

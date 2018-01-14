@@ -1,6 +1,6 @@
 <?php
 $app -> post('/api/login', function($request){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header("Content-type: application/json");
 
 	$u_email = $request-> getParsedBody()['u_email'];

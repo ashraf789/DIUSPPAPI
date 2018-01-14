@@ -10,7 +10,7 @@ $app -> delete('/api/group/delete/{project_id}','deleteGroup');
 
 	//read group information from groups table
 function readGroups(){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header('Content-type: application/json');
 	//checking api_key
 	//if api key invalid user can't use this api
@@ -33,7 +33,7 @@ function readGroups(){
 
 	//read a specific group infromation by project id 
 function readSpecificGroupByProjectId($request){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header('Content-type: application/json');
 	//checking api_key
 	//if api key invalid user can't use this api
@@ -58,7 +58,7 @@ function readSpecificGroupByProjectId($request){
 }
 
 function readSpecificGroupByAdminId($request){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header('Content-type: application/json');
 
 		//checking api_key
@@ -83,7 +83,7 @@ function readSpecificGroupByAdminId($request){
 }
 
 function createGroup($request){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header('Content-type: application/json');
 	//checking api_key
 	//if api key invalid user can't use this api
@@ -134,7 +134,7 @@ function createGroup($request){
 }
 
 function updateGroup($request){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header('Content-type: application/json');
 	//checking api_key
 	//if api key invalid user can't use this api
@@ -178,7 +178,7 @@ function updateGroup($request){
 }
 
 function deleteGroup($request){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header('Content-type: application/json');
 	//checking api_key
 	//if api key invalid user can't use this api

@@ -7,7 +7,7 @@ $app -> delete('/api/feature/delete/{id}','deleteFeature');
 
 function readFeature($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -34,7 +34,7 @@ function readFeature($request){
 
 function addFeature($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -79,7 +79,7 @@ function addFeature($request){
 
 function updateFeature($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -130,7 +130,7 @@ function updateFeature($request){
 }
 
 function deleteFeature($request){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header('Content-type: application/json');
 	//checking api_key
 	//if api key invalid user can't use this api

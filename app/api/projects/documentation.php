@@ -7,7 +7,7 @@ $app -> delete('/api/documentation/delete/{id}','deleteDocumentation');
 
 function readDocumentation($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -34,7 +34,7 @@ function readDocumentation($request){
 
 function addDocumentation($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 
 		//checking api_key
 	//if api key invalid user can't use this api
@@ -82,7 +82,7 @@ function addDocumentation($request){
 
 function updateDocumentation($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -133,7 +133,7 @@ function updateDocumentation($request){
 }
 
 function deleteDocumentation($request){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header('Content-type: application/json');
 	//checking api_key
 	//if api key invalid user can't use this api

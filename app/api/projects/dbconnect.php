@@ -2,7 +2,7 @@
 class DBhandler
 {
 	public function find($project_id){
-		require_once('/../dbconnect.php');
+		require_once __DIR__ .'/../dbconnect.php';
 
 		$projectid_query = "SELECT `id` FROM `projects` WHERE id = '".$project_id."' "; 
 		$result = $mysqli->query($projectid_query);

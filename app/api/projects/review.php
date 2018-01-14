@@ -7,7 +7,7 @@ $app -> delete('/api/review/delete/{id}','deleteReview');
 
 function readReview($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -35,7 +35,7 @@ function readReview($request){
 
 function addReview($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 
 	//checking api_key
 	//if api key invalid user can't use this api
@@ -83,7 +83,7 @@ function addReview($request){
 
 function updateReview($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 
 	//checking api_key
 	//if api key invalid user can't use this api
@@ -134,7 +134,7 @@ function updateReview($request){
 }
 
 function deleteReview($request){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header('Content-type: application/json');
 
 	//checking api_key

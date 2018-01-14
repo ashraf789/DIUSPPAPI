@@ -10,7 +10,7 @@ $app -> delete('/api/srs/delete/{id}','deleteSRS');
 
 function readSRS($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -36,7 +36,7 @@ function readSRS($request){
 
 function addSRS($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 
 	//checking api_key
 	//if api key invalid user can't use this api
@@ -87,7 +87,7 @@ function addSRS($request){
 
 function updateSRS($request){
 	header("Content-type: application/json");
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	//checking api_key
 	//if api key invalid user can't use this api
 	$result = isValidApiKey($mysqli);
@@ -135,7 +135,7 @@ function updateSRS($request){
 }
 
 function deleteSRS($request){
-	require_once('/../dbconnect.php');
+	require_once __DIR__ .'/../dbconnect.php';
 	header('Content-type: application/json');
 	//checking api_key
 	//if api key invalid user can't use this api
