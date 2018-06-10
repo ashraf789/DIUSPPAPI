@@ -343,3 +343,8 @@ Parameter: {
 <a href="https://imgur.com/yVSgx20"><img src="https://i.imgur.com/yVSgx20.png" title="source: imgur.com" /></a>
 ###### Invalid ID
 <a href="https://imgur.com/B38KZX5"><img src="https://i.imgur.com/B38KZX5.png" title="source: imgur.com" /></a>
+</br>
+
+## License
+This project is licensed under the MIT License - see the [License File](LICENSE) for details
+
