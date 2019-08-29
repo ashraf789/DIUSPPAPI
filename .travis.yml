@@ -1,1 +1,2 @@
 language: PHP
+script: API TEST
