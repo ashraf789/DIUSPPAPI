@@ -1,4 +1,6 @@
 ## DIUSPP API Documentation (Beta) `Version v1.0`
+[![Build Status](https://travis-ci.org/slimphp/Slim.svg?branch=4.x)](https://travis-ci.org/slimphp/Slim)
+
 ###### API hosted site: https://lazycoderbd.000webhostapp.com/
 
 **API key**
