@@ -1,6 +1,6 @@
 ## DIUSPP API Documentation (Beta) `Version v1.0`
 [![Build Status](https://travis-ci.org/ashraf789/DIUSPPAPI.svg?branch=master)](https://travis-ci.org/ashraf789/DIUSPPAPI)
-
+[![StyleCI](https://github.styleci.io/repos/114155648/shield?branch=master)](https://github.styleci.io/repos/114155648)
 ###### API hosted site: https://lazycoderbd.000webhostapp.com/
 
 **API key**
